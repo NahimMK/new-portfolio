@@ -9,6 +9,15 @@
     max-height: 90%;
 }
 
+.me {
+    position: absolute;
+    top: 8rem;
+    right: 10%;
+    z-index: -1;
+    object-fit: cover;
+    height: 85vh;
+}
+
     h1 {
         color: #fff;
         font-size: 53px;
@@ -79,5 +88,11 @@
             background: #ffd700;
             color: #333;
         }
+    }
+}
+
+@media screen and (max-width:694px) {
+    .me {
+        display: none;
     }
 }

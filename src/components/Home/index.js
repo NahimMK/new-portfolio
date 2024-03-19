@@ -1,8 +1,15 @@
 import { Link } from 'react-router-dom';
 import LogoTitle from '../../assets/images/logo-n.png';
+import ProfilePic from '../../assets/images/ME.png'
 import './index.scss';
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 const Home = () => {
+
+    const [text] = useTypewriter({
+        words: [' Software Engineer', ' Python Expert', ' Data Scientist', ' Problem Solver', ' Tech Enthusiast'],
+        loop: {},
+      });
 
     return (
         <div className="container home-page">
@@ -11,11 +18,14 @@ const Home = () => {
                 <img src={LogoTitle} alt="developer" />
                 ahim
                 <br />
-                Software Engineer
+                <span> {text} </span>
+                <span style={{color: '#ffd700'}}><Cursor cursorStyle='<' /></span>
+                <br />
                 </h1>
-                <h2>Python Expert / Data Scientist / Software Developer</h2>
+                <br /><br /><br />
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
             </div>
+            <img src={ProfilePic} alt="Profile" className="me" />
         </div>
     )
 }
