@@ -1,0 +1,51 @@
+// Container for the resume component
+.res {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+// Heading style
+.heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+  
+// PDF document styling
+.res .react-pdf__Document {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    margin: auto;
+}
+  
+// PDF page styling
+.res .react-pdf__Page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+// Cropping styling for the PDF page
+.pdf-container {
+    width: 100%;
+    height: auto;
+    max-width: 600px; // Adjust the width as needed to show only the left side
+    overflow: hidden;
+    position: relative;
+}
+
+.react-pdf__Page canvas {
+    transform: scale(1); // Scale up to fill the container
+    transform-origin: top left;
+}

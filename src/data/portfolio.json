@@ -1,0 +1,22 @@
+{
+    "portfolio": [
+        {
+            "cover": "/portfolio/django-ticket-proj/django-ticketing-screenshot.jpg",
+            "title": "Django Ticket Project",
+            "description": "A Django project that allows users to create and manage tickets.",
+            "url": "https://github.com/NahimMK/django-ticketing"
+        },
+        {
+            "cover": "/portfolio/django-ticket-proj/boundless-hollow-screenshot.jpg",
+            "title": "Boundless Hollow Game Project",
+            "description": "A 2D RPG dungeon crawler made in Unity.",
+            "url": "https://github.com/NahimMK/The-Boundless-Hollow"
+        },
+        {
+            "cover": "/portfolio/django-ticket-proj/portfolio-screenshot.jpg",
+            "title": "Portfolio Website",
+            "description": "An e-portfolio to showcase my work.",
+            "url": "https://github.com/NahimMK/new-portfolio"
+        }
+    ]
+}
